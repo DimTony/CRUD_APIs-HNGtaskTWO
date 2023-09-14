@@ -34,7 +34,7 @@ Building a Simple REST API for Managing a 'person' resource with CRUD operations
    ```
    npm install
 ```
-## 2. Configuration
+### 2. Configuration
 - To configure the API, you need to set up environment variables. Create a .env file in the project root and add the following variables:
 
 - PORT: The port on which the API will run (default is 5000).
