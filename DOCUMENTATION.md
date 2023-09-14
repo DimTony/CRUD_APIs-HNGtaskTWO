@@ -3,8 +3,8 @@ Building a Simple REST API for Managing a 'person' resource with CRUD operations
 
 ## Table of Contents
 1. [Getting Started](#getting-started)
-   - [Prerequisites](#prerequisites)
-   - [Installation](#installation)
+   - [Prerequisites](#Prerequisites)
+   - [Installation](#Installation)
 2. [Configuration](#configuration)
 3. [Running the API](#running-the-api)
 4. [Usage](#usage)
