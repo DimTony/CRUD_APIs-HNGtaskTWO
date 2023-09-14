@@ -11,6 +11,7 @@ Building a Simple REST API for Managing a 'person' resource with CRUD operations
    - [Endpoints](#endpoints)
 5. [Testing](#testing)
 6. [License](#license)
+7. [To CREATE a person](#to-create-a-person)
 
 
 ## 1. Getting Started
