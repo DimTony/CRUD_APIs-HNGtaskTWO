@@ -49,7 +49,7 @@ const getPerson = async (req, res, next) => {
   try {
     const PersonDetails = await Person.findById(user_id);
 
-    if (!person) {
+    if (!PersonDetails) {
       res.status(404);
       return next(new Error("Person not found"));
     }
