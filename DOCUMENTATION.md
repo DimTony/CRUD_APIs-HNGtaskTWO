@@ -24,11 +24,11 @@ Building a Simple REST API for Managing a 'person' resource with CRUD operations
    - Node.js: You can download and install Node.js from [nodejs.org](https://nodejs.org/).
    - MongoDB: Install and set up MongoDB on your system. You can download it from [mongodb.com](https://www.mongodb.com/).
    
-   ### Installation
+   - ### Installation
    ```
    npm install
    ```
-   ### Clone the repository to your local machine:
+   - ### Clone the repository to your local machine:
    ```
    git clone https://github.com/DimTony/HNGtaskTWO.git
    ```
@@ -88,7 +88,7 @@ For each endpoint, the API follows the following request and response formats:
       "name": "Obinna"
     }
     ```
-- **Response:**
+- **Successful Response:**
   - HTTP Status Code: ``` 200 OK ```
   - Response Body:
     ```
@@ -100,6 +100,15 @@ For each endpoint, the API follows the following request and response formats:
       }
     }
     ```
+- **Failed Response:**
+  - HTTP Status Code: ``` 404 Bad Request ```
+  - Instance: parsing ``` { "name": "" } ``` i.e An empty request field.
+  - Response Body:
+    ```
+    {
+       "message": "name field is required"
+    }
+    ```
 
 ### To READ a Single Person (GET /api/:user_id)
 
@@ -109,7 +118,7 @@ For each endpoint, the API follows the following request and response formats:
   - Endpoint: ``` /api/:user_id ```
   - Sample Url format: ``` https://crud-rest-tonydim.onrender.com/api/65035bca9279fe61fdfbda31 ```
 
-- **Response:**
+- **Successful Response:**
   - HTTP Status Code: ``` 200 OK ```
   - Response Body:
     ```
@@ -119,6 +128,15 @@ For each endpoint, the API follows the following request and response formats:
           "_id": "65035bca9279fe61fdfbda31",
           "name": "obinna"
       }
+    }
+    ```
+- **Failed Response:**
+  - HTTP Status Code: ``` 404 Not Found ```
+  - Instance: Parsing ``` https://crud-rest-tonydim.onrender.com/api/65038162097164357fbadf4d ``` i.e A user that does not exist in the database.
+  - Response Body:
+    ```
+    {
+       "message": "Person not found"
     }
     ```
 
@@ -136,7 +154,7 @@ For each endpoint, the API follows the following request and response formats:
     }
     ```
 
-- **Response:**
+- **Successful Response:**
   - HTTP Status Code: ``` 200 OK ```
   - Response Body:
     ```
@@ -147,6 +165,15 @@ For each endpoint, the API follows the following request and response formats:
         }
     }
     ```
+- **Failed Response:**
+  - HTTP Status Code: ``` 404 Not Found ```
+  - Instance: Parsing ``` https://crud-rest-tonydim.onrender.com/api/65038162097164357fbadf4d ``` i.e A user that does not exist in the database.
+  - Response Body:
+    ```
+    {
+       "message": "Person not found"
+    }
+    ```
   ### To DELETE a Person (DELETE /api/:user_id)
 
 - **Request:**
@@ -155,7 +182,7 @@ For each endpoint, the API follows the following request and response formats:
   - Endpoint: ``` /api/:user_id ```
   - Sample Url format: ``` https://crud-rest-tonydim.onrender.com/api/65035bca9279fe61fdfbda31 ```
 
-- **Response:**
+- **Successful Response:**
   - HTTP Status Code: ``` 200 OK ```
   - Response Body:
   ```
@@ -164,15 +191,15 @@ For each endpoint, the API follows the following request and response formats:
     }
 
   ```
-
-  To test the GET endpoint
-- In the collection you've created, Set your HTTP request to GET
-- In the request URL field, input link
-- Click Send
-- 
-In the request URL field, input link
-
-You will see 200 OK Message
+- **Failed Response:**
+  - HTTP Status Code: ``` 404 Not Found ```
+  - Instance: Parsing ``` https://crud-rest-tonydim.onrender.com/api/65038162097164357fbadf4d ``` i.e A user that does not exist in the database or that has already been deleted.
+  - Response Body:
+    ```
+    {
+       "message": "Person not found"
+    }
+    ```
 
 - ## UML DIAGRAM
 *LINK* https://lucid.app/lucidchart/e4e345e8-19da-407c-9920-b079544679b7/edit?viewport_loc=-236%2C-418%2C2346%2C1047%2C0_0&invitationId=inv_0138a24a-008a-42e7-b888-f14c40084274
