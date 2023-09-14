@@ -22,7 +22,7 @@ const createPerson = async (req, res, next) => {
 
     res.status(200).json({
       
-      person
+      createdPerson
     });
   } catch (error) {
     console.log(error);
@@ -56,7 +56,7 @@ const getPerson = async (req, res, next) => {
 
     res.status(200).json({
       
-      person
+      gottenPerson
     });
   } catch (error) {
     console.log(error);
