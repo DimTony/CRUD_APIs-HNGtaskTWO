@@ -19,22 +19,22 @@ Building a Simple REST API for Managing a 'person' resource with CRUD operations
 
 ### Prerequisites
 
-Before you can run the API, make sure you have the following prerequisites installed:
-
-- Node.js: You can download and install Node.js from [nodejs.org](https://nodejs.org/).
-- MongoDB: Install and set up MongoDB on your system. You can download it from [mongodb.com](https://www.mongodb.com/).
-
-### Installation
-```
-npm install
-```
-## 1. Clone the repository to your local machine:
-```
-git clone https://github.com/DimTony/HNGtaskTWO.git
-```
- **Install the project dependencies:**
-```
-npm install
+   Before you can run the API, make sure you have the following prerequisites installed:
+   
+   - Node.js: You can download and install Node.js from [nodejs.org](https://nodejs.org/).
+   - MongoDB: Install and set up MongoDB on your system. You can download it from [mongodb.com](https://www.mongodb.com/).
+   
+   ### Installation
+   ```
+   npm install
+   ```
+   ### Clone the repository to your local machine:
+   ```
+   git clone https://github.com/DimTony/HNGtaskTWO.git
+   ```
+    **Install the project dependencies:**
+   ```
+   npm install
 ```
 ## 2. Configuration
 - To configure the API, you need to set up environment variables. Create a .env file in the project root and add the following variables:
