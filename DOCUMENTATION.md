@@ -203,6 +203,8 @@ For each endpoint, the API follows the following request and response formats:
 - ## UML DIAGRAM
 *LINK* https://lucid.app/documents/view/e4e345e8-19da-407c-9920-b079544679b7
 
+[My UML Diagram link](https://lucid.app/documents/view/e4e345e8-19da-407c-9920-b079544679b7)
+
 
 ## 6. License
 This project is licensed under the MIT License. See the LICENSE file for details.
