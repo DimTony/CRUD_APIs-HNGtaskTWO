@@ -16,7 +16,7 @@ const createPerson = async (req, res, next) => {
       return next(new Error("Person already exists"));
     }
 
-    const person = await Person.create({
+    const createdPerson = await Person.create({
       name
     });
 
@@ -47,7 +47,7 @@ const getPersons = async (req, res, next) => {
 const getPerson = async (req, res, next) => {
   const { user_id } = req.params;
   try {
-    const person = await Person.findById(user_id);
+    const PersonDetails = await Person.findById(user_id);
 
     if (!person) {
       res.status(404);
@@ -56,7 +56,7 @@ const getPerson = async (req, res, next) => {
 
     res.status(200).json({
       
-      gottenPerson
+      PersonDetails
     });
   } catch (error) {
     console.log(error);
