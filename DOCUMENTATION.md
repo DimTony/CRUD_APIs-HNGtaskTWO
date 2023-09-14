@@ -1,5 +1,3 @@
-./gh-md-toc https://github.com/DimTony/HNGtaskTWO/blob/main/README.md
-
 # HNGtaskTWO
 Building a Simple REST API for Managing a 'person' resource with CRUD operations
 
