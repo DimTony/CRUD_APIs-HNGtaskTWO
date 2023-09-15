@@ -167,7 +167,7 @@ Here are some sample API usage scenarios:
 ### To READ a Person's details
 
    ```bash
-   curl --location 'https://crud-rest-tonydim.onrender.com/api/65048d6bcaa0559630deaaf3'
+   curl --location 'https://crud-rest-tonydim.onrender.com/api/65048e1fcaa0559630deaafa'
    ```
 
 - **Response:**
