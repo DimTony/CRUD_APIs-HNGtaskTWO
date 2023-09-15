@@ -58,9 +58,9 @@ API Live URL: https://crud-rest-tonydim.onrender.com
 Endpoints
 
   The API provides the following endpoints:
-  - ``` GET /api/:user_id ``` Retrieve a person's details by ID.
-  - ``` POST /api ``` Create a new person.
-  - ``` PUT /api/:user_id ``` Update a person's details by ID.
-  - ``` DELETE /api/:user_id ``` Delete a person by ID.
+  - ``` GET /api/:user_id ``` Fetch a person's details by ID.
+  - ``` POST /api ``` Add a new person.
+  - ``` PUT /api/:user_id ``` Modify a person's details by ID.
+  - ``` DELETE /api/:user_id ``` Remove a person by ID.
   
 
