@@ -172,7 +172,7 @@ Here are some sample API usage scenarios:
 
 - **Response:**
 
-  ![A terminal response of GET](IMG/readPerson.png)
+  ![A terminal response of GET](IMG/eadPerson.png)
 
 ### Update a Person
 
