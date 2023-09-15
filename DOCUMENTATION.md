@@ -1,4 +1,4 @@
-![image](https://github.com/DimTony/HNGtaskTWO/assets/144495013/878d1692-592e-478d-809d-04796249ea25)# HNGtaskTWO
+# HNGtaskTWO
 Building a Simple REST API for Managing a 'person' resource with CRUD operations
 
 ## Table of Contents
