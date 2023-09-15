@@ -53,7 +53,14 @@ API Live URL: https://crud-rest-tonydim.onrender.com
         ```
         npm start
         ```
-    - The API will start and be available at http://localhost:5000 (or the port you specified in the .env file).
+      The API will start and be available at http://localhost:5000 (or the port you specified in the .env file).
 ## 4. Usage
+Endpoints
+
+  The API provides the following endpoints:
+  - ``` GET /api/:user_id ``` Retrieve a person's details by ID.
+  - ``` POST /api ``` Create a new person.
+  - ``` PUT /api/:user_id ``` Update a person's details by ID.
+  - ``` DELETE /api/:user_id ``` Delete a person by ID.
   
 
