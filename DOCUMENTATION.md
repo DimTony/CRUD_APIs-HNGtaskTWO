@@ -16,6 +16,9 @@ Building a Simple REST API for Managing a 'person' resource with CRUD operations
     - [Delete a Person](#delete-a-person)
 
 ## 1. API Usage
+
+API Live URL: https://crud-rest-tonydim.onrender.com
+
 We can use a testing tool like Postman (or any testing tool you are familiar with) to test each CRUD operation in the API
 
 To run tests on Postman, use the following command:
