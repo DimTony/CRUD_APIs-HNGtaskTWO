@@ -137,7 +137,7 @@ For each endpoint, the API follows the following request and response formats:
 
 - **Successful Response:**
   - HTTP Status Code: ``` 200 OK ```
-  - Response Body:
+  - Response Body (JSON):
   ```
     {
         "message": "Person has been deleted."
@@ -147,7 +147,7 @@ For each endpoint, the API follows the following request and response formats:
 - **Failed Response:**
   - HTTP Status Code: ``` 404 Not Found ```
   - Instance: Parsing ``` https://crud-rest-tonydim.onrender.com/api/65038162097164357fbadf4d ``` i.e A user that does not exist in the database or that has already been deleted.
-  - Response Body:
+  - Response Body (JSON):
     ```
     {
        "message": "Person not found"
