@@ -24,11 +24,11 @@ For each endpoint, the API follows the following request and response formats:
 
 ### To CREATE A Person (POST /api)
 
-- **Request:**
+- **Standard Request Format:**
   - HTTP Method: ``` POST ```
   - Endpoint: ``` /api ```
   - Sample Url format: ``` https://crud-rest-tonydim.onrender.com/api ```
-  - Request Body:
+  - Request Body (JSON):
     ```
     {
       "name": "Obinna"
@@ -36,11 +36,11 @@ For each endpoint, the API follows the following request and response formats:
     ```
 - **Successful Response:**
   - HTTP Status Code: ``` 200 OK ```
-  - Response Body:
+  - Response Body (JSON):
     ```
   
     {
-      "person": {
+      "createdPerson": {
           "name": "obinna",
           "_id": "65035bca9279fe61fdfbda31"
       }
@@ -49,7 +49,7 @@ For each endpoint, the API follows the following request and response formats:
 - **Failed Response:**
   - HTTP Status Code: ``` 404 Bad Request ```
   - Instance: parsing ``` { "name": "" } ``` i.e An empty request field.
-  - Response Body:
+  - Response Body (JSON):
     ```
     {
        "message": "name field is required"
@@ -58,7 +58,7 @@ For each endpoint, the API follows the following request and response formats:
 
 ### To READ a Single Person (GET /api/:user_id)
 
-- **Request:**
+- **Standard Request Format:**
 
   - HTTP Method: ``` GET ```
   - Endpoint: ``` /api/:user_id ```
@@ -66,11 +66,11 @@ For each endpoint, the API follows the following request and response formats:
 
 - **Successful Response:**
   - HTTP Status Code: ``` 200 OK ```
-  - Response Body:
+  - Response Body (JSON):
     ```
     
     {
-      "person": {
+      "PersonDetails": {
           "_id": "65035bca9279fe61fdfbda31",
           "name": "obinna"
       }
@@ -79,7 +79,7 @@ For each endpoint, the API follows the following request and response formats:
 - **Failed Response:**
   - HTTP Status Code: ``` 404 Not Found ```
   - Instance: Parsing ``` https://crud-rest-tonydim.onrender.com/api/65038162097164357fbadf4d ``` i.e A user that does not exist in the database.
-  - Response Body:
+  - Response Body (JSON):
     ```
     {
        "message": "Person not found"
@@ -88,12 +88,12 @@ For each endpoint, the API follows the following request and response formats:
 
 ### To UPDATE a Person's detail (PUT /api/:user_id)
 
-- **Request:**
+- **Standard Request Format:**
 
   - HTTP Method: ``` PUT ```
   - Endpoint: ``` /api/:user_id ```
   - Sample Url format:```  https://crud-rest-tonydim.onrender.com/api/65035bca9279fe61fdfbda31 ```
-  - Request Body:
+  - Request Body (JSON):
     ```
     {
       "name": "Anthony"
@@ -102,7 +102,7 @@ For each endpoint, the API follows the following request and response formats:
 
 - **Successful Response:**
   - HTTP Status Code: ``` 200 OK ```
-  - Response Body:
+  - Response Body (JSON):
     ```
     {
         "updatedPerson": {
@@ -114,7 +114,7 @@ For each endpoint, the API follows the following request and response formats:
 - **Failed Response:**
   - HTTP Status Code: ``` 404 Not Found ```
   - Instance: Parsing ``` https://crud-rest-tonydim.onrender.com/api/65038162097164357fbadf4d ``` i.e A user that does not exist in the database.
-  - Response Body:
+  - Response Body (JSON):
     ```
     {
        "message": "Person not found"
@@ -122,7 +122,7 @@ For each endpoint, the API follows the following request and response formats:
     ```
   ### To DELETE a Person (DELETE /api/:user_id)
 
-- **Request:**
+- **Standard Request Format:**
 
   - HTTP Method: ``` DELETE ```
   - Endpoint: ``` /api/:user_id ```
