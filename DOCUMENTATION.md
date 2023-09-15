@@ -31,7 +31,7 @@ For each endpoint, the API follows the following request and response formats:
   - Request Body (JSON):
     ```
     {
-      "name": "Obinna"
+      "name": "Tony Dim"
     }
     ```
 - **Successful Response:**
@@ -41,7 +41,7 @@ For each endpoint, the API follows the following request and response formats:
   
     {
       "createdPerson": {
-          "name": "obinna",
+          "name": "Tony Dim",
           "_id": "65035bca9279fe61fdfbda31"
       }
     }
@@ -155,11 +155,9 @@ Here are some sample API usage scenarios:
 ### Create a Person
 
    ```bash
-   curl --location 'https://crud-rest-tonydim.onrender.com/api' \
-    --header 'Content-Type: application/json' \
-    --data '{
-        "name": "Dimojiaku Obinna"
-    }'
+   curl --location 'https://crud-rest-tonydim.onrender.com/api' --header 'Content-Type: application/json' --data '{
+        "name": "Tony Dim"
+      }'
    ```
 
 - **Response:**
