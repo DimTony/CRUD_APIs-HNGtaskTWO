@@ -4,7 +4,7 @@ Building a Simple REST API for Managing a 'person' resource with CRUD operations
 ## Table of Contents
 - [HNGtaskTWO](#hngtasktwo)
   - [Table of Contents](#table-of-contents)
-  - [5. API Usage](#5-api-usage)
+  - [1. API Usage](#5-api-usage)
     - [To CREATE a Person (POST /api)](#to-create-a-person-post-api)
     - [To READ a Person's details (GET /api/:user_id)](#to-read-a-persons-details-get-apiuser_id)
     - [To UPDATE a Person's details (PUT /api/:user_id)](#to-update-a-persons-details-put-apiuser_id)
