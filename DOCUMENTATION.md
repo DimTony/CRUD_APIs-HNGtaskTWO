@@ -22,7 +22,7 @@ To run tests on Postman, use the following command:
 
 For each endpoint, the API follows the following request and response formats:
 
-### To CREATE A Person (POST /api)
+### To CREATE a Person (POST /api)
 
 - **Standard Request Format:**
   - HTTP Method: ``` POST ```
@@ -56,7 +56,7 @@ For each endpoint, the API follows the following request and response formats:
     }
     ```
 
-### To READ a Single Person (GET /api/:user_id)
+### To READ a Person's details (GET /api/:user_id)
 
 - **Standard Request Format:**
 
@@ -86,7 +86,7 @@ For each endpoint, the API follows the following request and response formats:
     }
     ```
 
-### To UPDATE a Person's detail (PUT /api/:user_id)
+### To UPDATE a Person's details (PUT /api/:user_id)
 
 - **Standard Request Format:**
 
@@ -152,7 +152,7 @@ For each endpoint, the API follows the following request and response formats:
 Here are some sample API usage scenarios:
 ##### *Note: make sure you have your server running*
 
-### Create a Person
+### To CREATE a Person
 
    ```bash
    curl --location 'https://crud-rest-tonydim.onrender.com/api' --header 'Content-Type: application/json' --data '{
@@ -162,31 +162,31 @@ Here are some sample API usage scenarios:
 
 - **Response:**
 
-  ![A terminal response of CREATE](IMGs/CREATE_PERSON.png)
+  ![A terminal response of CREATE](IMG/createPerson.png)
 
-### Fetch Details of a Person
+### To READ a Person's details
 
    ```bash
-   curl http://localhost:8000/api/30/ -w "\n"
+   curl --location 'https://crud-rest-tonydim.onrender.com/api/65048d6bcaa0559630deaaf3'
    ```
 
 - **Response:**
 
-  ![A terminal response of GET](IMGs/FETCH_PERSON.png)
+  ![A terminal response of GET](IMG/readPerson.png)
 
 ### Update a Person
 
    ```bash
-   curl -X PUT -H "Content-Type: application/json" -d '{
-     "name": "HendriX Lenge",
-     "age": 20,
-     "email": "devreganmatics@example.com"
-   }' http://localhost:8000/api/30/ -w "\n\n"
+   curl --location --request PUT 'https://crud-rest-tonydim.onrender.com/api/650485a820866d6ef1d7ab23' \
+      --header 'Content-Type: application/json' \
+      --data '{
+          "name": "Tony Dim Updated"
+      }'
    ```
 
 - **Response:**
 
-  ![A terminal response of PUT](IMGs/UPDATE_PERSON.png)
+  ![A terminal response of PUT](IMG/updatePerson.png)
 
 ### Delete a Person
 
