@@ -20,31 +20,30 @@ Project dependencies include express, a backend web application framework for bu
 ## Hosting
 Using Render hosting service
 
-API Live URL: https://crud-rest-tonydim.onrender.com- [HNGx-STAGEtwoTASK](#hngx-stagetwotask)
-  - [Project Dependencies](#project-dependencies)
-  - [Hosting](#hosting)
-  - [Installation](#installation)
+API Live URL: https://crud-rest-tonydim.onrender.com
   
 ## Installation
  - ### Clone the repository to your local machine:
     ```
     git clone https://github.com/DimTony/HNGtaskTWO.git
-
     ```
  - ### Install the project dependencies
-     ``` npm install ``` 
+     ```
+       npm install
+     ```
+   
    This installs the packages in package.json file
  - ### Configure the API
    You need to set up environment variables. Create a .env file in the project root and add the following variables:
 
     - PORT: The port on which the API will run (default is 5000).
     - MONGO_URI: The connection string to your MongoDB instance. Set the <database> and <password> to that of your preferred choice
-    - 
+   
     **Sample:**
-        ```
-            PORT=5000
-            MONGO_URI = mongodb+srv://<database>:<password>@cluster0.cgmoocn.mongodb.net/persondb?retryWrites=true&w=majority
-        ```
+    ```
+      PORT=5000
+      MONGO_URI = mongodb+srv://<database>:<password>@cluster0.cgmoocn.mongodb.net/persondb?retryWrites=true&w=majority
+    ```
  - ## Running the API
     - To start the API, run the following command:
         ```
