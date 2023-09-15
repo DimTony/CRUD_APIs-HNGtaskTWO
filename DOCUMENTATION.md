@@ -1,4 +1,4 @@
-# HNGtaskTWO
+![image](https://github.com/DimTony/HNGtaskTWO/assets/144495013/878d1692-592e-478d-809d-04796249ea25)# HNGtaskTWO
 Building a Simple REST API for Managing a 'person' resource with CRUD operations
 
 ## Table of Contents
@@ -177,7 +177,7 @@ Here are some sample API usage scenarios:
 ### Update a Person
 
    ```bash
-   curl --location --request PUT 'https://crud-rest-tonydim.onrender.com/api/650485a820866d6ef1d7ab23' \
+   curl --location --request PUT 'https://crud-rest-tonydim.onrender.com/api/65048e1fcaa0559630deaafa' \
       --header 'Content-Type: application/json' \
       --data '{
           "name": "Tony Dim Updated"
@@ -186,7 +186,7 @@ Here are some sample API usage scenarios:
 
 - **Response:**
 
-  ![A terminal response of PUT](IMG/updatePerson.png)
+  ![A terminal response of PUT](IMG/updateAPerson.png)
 
 ### Delete a Person
 
