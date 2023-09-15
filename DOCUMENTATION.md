@@ -16,7 +16,7 @@ Building a Simple REST API for Managing a 'person' resource with CRUD operations
     - [Update a Person](#update-a-person)
     - [Delete a Person](#delete-a-person)
 
-## 5. API Usage
+## 1. API Usage
 We can use a testing tool like Postman (or any testing tool you are familiar with) to test each CRUD operation in the API
 
 To run tests on Postman, use the following command:
@@ -152,10 +152,11 @@ For each endpoint, the API follows the following request and response formats:
     }
     ```
 
-## Sample Usage
+## 2. Sample Usage
 
 Here are some sample API usage scenarios:
-##### *Note: make sure you have your server running*
+  
+  - Note: make sure you have your server running*
 
 ### To CREATE a Person
 
