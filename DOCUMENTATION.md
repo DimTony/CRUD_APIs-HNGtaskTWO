@@ -191,5 +191,9 @@ Here are some sample API usage scenarios:
 ### Delete a Person
 
    ```bash
-   curl -X DELETE http://localhost:8000/api/30/ -w "\n\n"
+   curl --location --request DELETE 'https://crud-rest-tonydim.onrender.com/api/65048e1fcaa0559630deaafa'
    ```
+
+  - **Response:**
+
+  ![A terminal response of DELETE](IMG/deletePerson.png)
