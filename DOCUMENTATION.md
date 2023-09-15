@@ -138,12 +138,12 @@ For each endpoint, the API follows the following request and response formats:
 - **Successful Response:**
   - HTTP Status Code: ``` 200 OK ```
   - Response Body (JSON):
-  ```
-    {
-        "message": "Person has been deleted."
-    }
-
-  ```
+    ```
+      {
+          "message": "Person has been deleted."
+      }
+  
+    ```
 - **Failed Response:**
   - HTTP Status Code: ``` 404 Not Found ```
   - Instance: Parsing ``` https://crud-rest-tonydim.onrender.com/api/65038162097164357fbadf4d ``` i.e A user that does not exist in the database or that has already been deleted.
@@ -204,4 +204,33 @@ Here are some sample API usage scenarios:
 
   - **Response:**
 
-  ![A terminal response of DELETE](IMG/deletePerson.png)
+    ![A terminal response of DELETE](IMG/deletePerson.png)
+  
+## 3. Local Deployment
+
+### Clone repository:
+
+```
+git clone https://github.com/DimTony/HNGtaskTWO.git
+```
+
+### Install dependencies in package.json:
+
+```
+npm install
+```
+
+### Create .env file and set db server:
+
+```
+PORT: 5000
+MONGODB_URI = "mongodb://localhost:27017/<database>"
+```
+
+### Run command below to start:
+
+```
+npm run start
+```
+
+### Navigate to <http://localhost:PORT> to view the project and the deploy the above mentioned endpoints.
