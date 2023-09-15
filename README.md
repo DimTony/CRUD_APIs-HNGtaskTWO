@@ -16,6 +16,7 @@ Project dependencies include express, a backend web application framework for bu
  - Cors
  - Dotenv
  - Nodemon
+ - MongoDB
 
 ## Hosting
 Using Render hosting service
