@@ -127,7 +127,7 @@ For each endpoint, the API follows the following request and response formats:
        "message": "Person not found"
     }
     ```
-  ### To DELETE a Person (DELETE /api/:user_id)
+### To DELETE a Person (DELETE /api/:user_id)
 
 - **Standard Request Format:**
 
