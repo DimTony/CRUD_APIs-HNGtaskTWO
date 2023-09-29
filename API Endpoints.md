@@ -6,11 +6,12 @@
 
 These endpoints serve as the gateway to secure and control access within your application. From user registration to login, account recovery, and two-factor authentication (2FA), these endpoints collectively ensure that only authorized individuals gain entry while providing essential tools for user management and security enhancement. Explore this documentation to understand their functions, implementation, and best practices, empowering you to build a robust and user-friendly authentication system.
 
-### **Conventions**- [Authentication API Endpoints](#authentication-api-endpoints)
+### Table of Contents 
 - [Authentication API Endpoints](#authentication-api-endpoints)
 - [Generic](#generic)
   - [Introduction](#introduction)
-    - [**Conventions**- Authentication API Endpoints](#conventions--authentication-api-endpoints)
+    - [Table of Contents](#table-of-contents)
+  - [Conventions](#conventions)
   - [Status Codes](#status-codes)
     - [Success Code](#success-code)
     - [Error Codes](#error-codes)
@@ -25,6 +26,7 @@ These endpoints serve as the gateway to secure and control access within your ap
     - [Sign in with Facebook](#sign-in-with-facebook)
     - [Sign in with Github](#sign-in-with-github)
 
+## Conventions
 
 The base URL to send all API requests is `https://zuriportfoloio.com`. HTTPS is required for all API requests.
 
