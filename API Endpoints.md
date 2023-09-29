@@ -26,6 +26,7 @@ These endpoints serve as the gateway to secure and control access within your ap
     - [Sign in with Facebook](#sign-in-with-facebook)
     - [Sign in with Github](#sign-in-with-github)
 
+
 ## Conventions
 
 The base URL to send all API requests is `https://zuriportfoloio.com`. HTTPS is required for all API requests.
@@ -82,7 +83,7 @@ The user object will have the following attributes
 
 # Endpoints
 
-[Endpoints](csv/Endpoints.csv)
+[Endpoints](Authentication%20API%20Endpoints%203e3d93c0aa184305b6f554a66a3cdd58/Endpoints%20b7efc4f51377439c99f23f5087a107d6.csv)
 
 ### ****Code samples & SDKs****
 
