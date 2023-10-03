@@ -8,7 +8,12 @@ This Node.js API allows you to perform video processing tasks, including uploadi
   - [3. Prerequisites](#3-prerequisites)
   - [4. Project Dependencies](#4-project-dependencies)
   - [5. Installation](#5-installation)
+    - [Clone This Repository:](#clone-this-repository)
+    - [Install Dependencies](#install-dependencies)
+    - [Configure the API](#configure-the-api)
   - [6. Usage](#6-usage)
+    - [Running the API](#running-the-api)
+    - [API Interactions](#api-interactions)
   - [7. Contributing](#7-contributing)
 
 ## 1. Features
@@ -92,4 +97,4 @@ Before you begin, ensure you have the following installed:
 
 ## 7. Contributing
 
-Contributions are welcomed! Feel free to open issues or submit pull requests or reach out through email at: Dhymyantt1@gmail.com.
+Contributions are welcomed! Feel free to open issues or submit pull requests or reach out through email at: [MyEmail](mailto:dhymyantt1@gmail.com).
