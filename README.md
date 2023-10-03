@@ -1,66 +1,74 @@
-# HNGx-STAGEtwoTASK
+# Screen Recording Chrome Extension API
 
-HNGx Internship Stage Two Task - An API with endpoints that performs CREATE, READ, UPDATE, DELETE (CRUD) operation on a 'person' resource, built with node.js and express framework using MongoDB NoSQL database.
+This Node.js API allows you to perform video processing tasks, including uploading video chunks, concatenating videos, and transcribing the concatenated.
 
-Project dependencies include express, a backend web application framework for building RESTful APIs with Node.js, mongoose which is an object data modeling (odm) library for mongodb and node.js, joi which is a popular module for data validation, dotenv which is a zero-dependency module that loads environment variables from a .env file into process.env, and cors which is a node.js package for providing a Connect/Express middleware that can be used to enable "Cross-Origin Resource Sharing" with various options
+## Features
+- Upload video chunks.
+- Concatenate uploaded video chunks.
+- Transcribe the concatenated video.
+- Retrieve video and transcription information.
 
-## Table of Contents
-- [HNGx-STAGEtwoTASK](#hngx-stagetwotask)
-  - [Table of Contents](#table-of-contents)
-  - [1. Project Dependencies](#1-project-dependencies)
-  - [2. Hosting](#2-hosting)
-  - [3. Installation](#3-installation)
-  - [4. Usage](#4-usage)
+## Getting Started
 
-## 1. Project Dependencies
- - Express
- - Node.js
- - Mongoose
- - Cors
- - Dotenv
- - Nodemon
- - MongoDB
+Follow the steps below to set up and run the API.
 
-## 2. Hosting
-Using Render hosting service
+## Prerequisites
 
-API Live URL: https://crud-rest-tonydim.onrender.com
-  
-## 3. Installation
- - ### Clone the repository to your local machine:
+Before you begin, ensure you have the following installed:
+
+- Node.js
+- npm (Node Package Manager)
+
+## Project Dependencies
+
+- Express
+- Body-parser
+- Path
+- Multer
+- Fluent-ffmpeg
+- Deepgram SDK
+- Fs
+- UUID
+- Dotenv
+
+### Installation
+
+1. Clone This Repository:
+
+    ``` 
+    git clone https://github.com/DimTony/HNGtask5-Extension.git
+    cd HNGtask5-Extension 
     ```
-    git clone https://github.com/DimTony/HNGtaskTWO.git
-    ```
- - ### Install the project dependencies
-     ```
-       npm install
-     ```
-   
-   This installs the packages in package.json file
- - ### Configure the API
-   You need to set up environment variables. Create a .env file in the project root and add the following variables:
 
-    - PORT: The port on which the API will run (default is 5000).
-    - MONGO_URI: The connection string to your MongoDB instance. Set the <database> and <password> to that of your preferred choice
-   
-    **Sample:**
-    ```
-      PORT=5000
-      MONGO_URI = mongodb+srv://<database>:<password>@cluster0.cgmoocn.mongodb.net/persondb?retryWrites=true&w=majority
-    ```
- - ## Running the API
-    - To start the API, run the following command:
-        ```
-        npm start
-        ```
-      The API will start and be available at http://localhost:5000 (or the port you specified in the .env file).
-## 4. Usage
-Endpoints
+2. Install Dependencies
 
-  The API provides the following endpoints:
-  - ``` GET /api/:user_id ``` Fetch a person's details by ID.
-  - ``` POST /api ``` Add a new person.
-  - ``` PUT /api/:user_id ``` Modify a person's details by ID.
-  - ``` DELETE /api/:user_id ``` Remove a person by ID.
-  
+    ``` npm install ```
 
+3. Create Your Environment Variables
+
+    Create a `.env` file in the root directory and specify your environment variables, including your Deepgram API Key and preferred port
+
+    ```
+    PORT=3000
+    DEEPGRAM_API_KEY=YOUR_DEEPGRAM_API_KEY_HERE
+    
+    ```
+## Usage
+
+Start the server:
+
+    ```
+    npm start
+    ```
+
+Use an API client (e.g., Postman) to interact with the following endpoints
+
+- Start Video: `POST /api/start`
+- Upload, Concatenate & Transcribe Video: `POST /api/uploadFile`
+- Stop Video: `POST /api/stop`
+- Retrieve Video Information: `GET /api/getVideo/:id`
+
+
+## Contributing
+
+Contributions are welcomed! Feel free to open issues or submit pull requests.
