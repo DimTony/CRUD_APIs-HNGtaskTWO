@@ -42,53 +42,54 @@ Before you begin, ensure you have the following installed:
 - Dotenv
 
 ## 5. Installation
+### Clone This Repository:
+```
+  git clone https://github.com/DimTony/HNGtask5-Extension.git
+  cd HNGtask5-Extension
+```
 
-    ### Clone This Repository:
 
-        ```
-        git clone https://github.com/DimTony/HNGtask5-Extension.git
-        cd HNGtask5-Extension
-        ```
+### Install Dependencies
+```
+  npm install
+```
+  This installs the packages in the package.json file.
 
-    ### Install Dependencies
+### Configure the API
 
-        ``` npm install ```
-        This installs the packages in the package.json file.
+  Create a .env file in the root directory and specify your environment variables, including your Deepgram API Key and preferred port
 
-    ### Configure the API
+  - PORT= The port on which the API will run (default is 3000)
+  - DEEPGRAM_API_KEY= The API Key to your Deepgram instance.
 
-        Create a `.env` file in the root directory and specify your environment variables, including your Deepgram API Key and preferred port
+  **Sample:**
+  ```
+  PORT=3000
+  DEEPGRAM_API_KEY=YOUR_DEEPGRAM_API_KEY_HERE
+  ``` 
 
-        - PORT= The port on which the API will run (default is 3000)
-        - DEEPGRAM_API_KEY= The API Key to your Deepgram instance.
 
-        **Sample:**
-
-        ```
-        PORT=3000
-        DEEPGRAM_API_KEY=YOUR_DEEPGRAM_API_KEY_HERE
-
-        ```
+        
 
 ## 6. Usage
 
-    ### Running the API
-        To start the API, run the following command:
+### Running the API
+  To start the API, run the following command:
 
-        ```
-        npm start
-        ```
-        The API will start and be available at http://localhost:3000 (or the port you specified in the .env file)
+  ```
+  npm start
+  ```
+  The API will start and be available at http://localhost:3000 (or the port you specified in the .env file)
 
-    ### API Interactions
+### API Interactions
 
-        Use an API client (e.g., Postman) to interact with the following endpoints
+  Use an API client (e.g., Postman) to interact with the following endpoints
 
-        - Start Video: `POST /api/start`
-        - Upload, Concatenate & Transcribe Video: `POST /api/uploadFile`
-        - Stop Video: `POST /api/stop`
-        - Retrieve Video Information: `GET /api/getVideo/:id`
+  - Start Video: `POST /api/start`
+  - Upload, Concatenate & Transcribe Video: `POST /api/uploadFile`
+  - Stop Video: `POST /api/stop`
+  - Retrieve Video Information: `GET /api/getVideo/:id`
 
 ## 7. Contributing
 
-Contributions are welcomed! Feel free to open issues or submit pull requests.
+Contributions are welcomed! Feel free to open issues or submit pull requests or reach out through email at: Dhymyantt1@gmail.com.
