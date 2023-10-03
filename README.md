@@ -94,6 +94,9 @@ Before you begin, ensure you have the following installed:
   - Upload, Concatenate & Transcribe Video: `POST /api/uploadFile`
   - Stop Video: `POST /api/stop`
   - Retrieve Video Information: `GET /api/getVideo/:id`
+### Limitations
+
+  - A good internet connection is required when running the API as it involves video manipulations.
 
 ## 7. Contributing
 
