@@ -97,4 +97,4 @@ Before you begin, ensure you have the following installed:
 
 ## 7. Contributing
 
-Contributions are welcomed! Feel free to open issues or submit pull requests or reach out through email at: [MyEmail](mailto:dhymyantt1@gmail.com).
+Contributions are welcomed! Feel free to open issues or submit pull requests or reach out through email via: [MyEmail](mailto:dhymyantt1@gmail.com).
