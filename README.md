@@ -8,8 +8,8 @@ This Node.js API allows you to perform video processing tasks, including uploadi
   - [3. Prerequisites](#3-prerequisites)
   - [4. Project Dependencies](#4-project-dependencies)
   - [5. Installation](#5-installation)
-  - [Usage](#usage)
-  - [Contributing](#contributing)
+  - [6. Usage](#6-usage)
+  - [7. Contributing](#7-contributing)
 
 ## 1. Features
 
@@ -70,7 +70,7 @@ Before you begin, ensure you have the following installed:
 
         ```
 
-## Usage
+## 6. Usage
 
     ### Running the API
         To start the API, run the following command:
@@ -89,6 +89,6 @@ Before you begin, ensure you have the following installed:
         - Stop Video: `POST /api/stop`
         - Retrieve Video Information: `GET /api/getVideo/:id`
 
-## Contributing
+## 7. Contributing
 
 Contributions are welcomed! Feel free to open issues or submit pull requests.
