@@ -2,24 +2,34 @@
 
 This Node.js API allows you to perform video processing tasks, including uploading video chunks, concatenating videos, and transcribing the concatenated.
 
-## Features
+- [Screen Recording Chrome Extension API](#screen-recording-chrome-extension-api)
+  - [1. Features](#1-features)
+  - [2. Getting Started](#2-getting-started)
+  - [3. Prerequisites](#3-prerequisites)
+  - [4. Project Dependencies](#4-project-dependencies)
+  - [5. Installation](#5-installation)
+  - [Usage](#usage)
+  - [Contributing](#contributing)
+
+## 1. Features
+
 - Upload video chunks.
 - Concatenate uploaded video chunks.
 - Transcribe the concatenated video.
 - Retrieve video and transcription information.
 
-## Getting Started
+## 2. Getting Started
 
 Follow the steps below to set up and run the API.
 
-## Prerequisites
+## 3. Prerequisites
 
 Before you begin, ensure you have the following installed:
 
 - Node.js
 - npm (Node Package Manager)
 
-## Project Dependencies
+## 4. Project Dependencies
 
 - Express
 - Body-parser
@@ -31,43 +41,53 @@ Before you begin, ensure you have the following installed:
 - UUID
 - Dotenv
 
-### Installation
+## 5. Installation
 
-1. Clone This Repository:
+    ### Clone This Repository:
 
-    ``` 
-    git clone https://github.com/DimTony/HNGtask5-Extension.git
-    cd HNGtask5-Extension 
-    ```
+        ```
+        git clone https://github.com/DimTony/HNGtask5-Extension.git
+        cd HNGtask5-Extension
+        ```
 
-2. Install Dependencies
+    ### Install Dependencies
 
-    ``` npm install ```
+        ``` npm install ```
+        This installs the packages in the package.json file.
 
-3. Create Your Environment Variables
+    ### Configure the API
 
-    Create a `.env` file in the root directory and specify your environment variables, including your Deepgram API Key and preferred port
+        Create a `.env` file in the root directory and specify your environment variables, including your Deepgram API Key and preferred port
 
-    ```
-    PORT=3000
-    DEEPGRAM_API_KEY=YOUR_DEEPGRAM_API_KEY_HERE
-    
-    ```
+        - PORT= The port on which the API will run (default is 3000)
+        - DEEPGRAM_API_KEY= The API Key to your Deepgram instance.
+
+        **Sample:**
+
+        ```
+        PORT=3000
+        DEEPGRAM_API_KEY=YOUR_DEEPGRAM_API_KEY_HERE
+
+        ```
+
 ## Usage
 
-Start the server:
+    ### Running the API
+        To start the API, run the following command:
 
-    ```
-    npm start
-    ```
+        ```
+        npm start
+        ```
+        The API will start and be available at http://localhost:3000 (or the port you specified in the .env file)
 
-Use an API client (e.g., Postman) to interact with the following endpoints
+    ### API Interactions
 
-- Start Video: `POST /api/start`
-- Upload, Concatenate & Transcribe Video: `POST /api/uploadFile`
-- Stop Video: `POST /api/stop`
-- Retrieve Video Information: `GET /api/getVideo/:id`
+        Use an API client (e.g., Postman) to interact with the following endpoints
 
+        - Start Video: `POST /api/start`
+        - Upload, Concatenate & Transcribe Video: `POST /api/uploadFile`
+        - Stop Video: `POST /api/stop`
+        - Retrieve Video Information: `GET /api/getVideo/:id`
 
 ## Contributing
 
