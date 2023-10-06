@@ -1,103 +1,66 @@
-# Screen Recording Chrome Extension API
+# HNGx-STAGEtwoTASK
 
-This Node.js API allows you to perform video processing tasks, including uploading video chunks, concatenating videos, and transcribing the concatenated.
+HNGx Internship Stage Two Task - An API with endpoints that performs CREATE, READ, UPDATE, DELETE (CRUD) operation on a 'person' resource, built with node.js and express framework using MongoDB NoSQL database.
 
-- [Screen Recording Chrome Extension API](#screen-recording-chrome-extension-api)
-  - [1. Features](#1-features)
-  - [2. Getting Started](#2-getting-started)
-  - [3. Prerequisites](#3-prerequisites)
-  - [4. Project Dependencies](#4-project-dependencies)
-  - [5. Installation](#5-installation)
-    - [Clone This Repository:](#clone-this-repository)
-    - [Install Dependencies](#install-dependencies)
-    - [Configure the API](#configure-the-api)
-  - [6. Usage](#6-usage)
-    - [Running the API](#running-the-api)
-    - [API Interactions](#api-interactions)
-  - [7. Contributing](#7-contributing)
+Project dependencies include express, a backend web application framework for building RESTful APIs with Node.js, mongoose which is an object data modeling (odm) library for mongodb and node.js, joi which is a popular module for data validation, dotenv which is a zero-dependency module that loads environment variables from a .env file into process.env, and cors which is a node.js package for providing a Connect/Express middleware that can be used to enable "Cross-Origin Resource Sharing" with various options
 
-## 1. Features
+## Table of Contents
+- [HNGx-STAGEtwoTASK](#hngx-stagetwotask)
+  - [Table of Contents](#table-of-contents)
+  - [1. Project Dependencies](#1-project-dependencies)
+  - [2. Hosting](#2-hosting)
+  - [3. Installation](#3-installation)
+  - [4. Usage](#4-usage)
 
-- Upload video chunks.
-- Concatenate uploaded video chunks.
-- Transcribe the concatenated video.
-- Retrieve video and transcription information.
+## 1. Project Dependencies
+ - Express
+ - Node.js
+ - Mongoose
+ - Cors
+ - Dotenv
+ - Nodemon
+ - MongoDB
 
-## 2. Getting Started
+## 2. Hosting
+Using Render hosting service
 
-Follow the steps below to set up and run the API.
+API Live URL: https://crud-rest-tonydim.onrender.com
+  
+## 3. Installation
+ - ### Clone the repository to your local machine:
+    ```
+    git clone https://github.com/DimTony/HNGtaskTWO.git
+    ```
+ - ### Install the project dependencies
+     ```
+       npm install
+     ```
+   
+   This installs the packages in package.json file
+ - ### Configure the API
+   You need to set up environment variables. Create a .env file in the project root and add the following variables:
 
-## 3. Prerequisites
+    - PORT: The port on which the API will run (default is 5000).
+    - MONGO_URI: The connection string to your MongoDB instance. Set the <database> and <password> to that of your preferred choice
+   
+    **Sample:**
+    ```
+      PORT=5000
+      MONGO_URI = mongodb+srv://<database>:<password>@cluster0.cgmoocn.mongodb.net/persondb?retryWrites=true&w=majority
+    ```
+ - ## Running the API
+    - To start the API, run the following command:
+        ```
+        npm start
+        ```
+      The API will start and be available at http://localhost:5000 (or the port you specified in the .env file).
+## 4. Usage
+Endpoints
 
-Before you begin, ensure you have the following installed:
+  The API provides the following endpoints:
+  - ``` GET /api/:user_id ``` Fetch a person's details by ID.
+  - ``` POST /api ``` Add a new person.
+  - ``` PUT /api/:user_id ``` Modify a person's details by ID.
+  - ``` DELETE /api/:user_id ``` Remove a person by ID.
+  
 
-- Node.js
-- npm (Node Package Manager)
-
-## 4. Project Dependencies
-
-- Express
-- Body-parser
-- Path
-- Multer
-- Fluent-ffmpeg
-- Deepgram SDK
-- Fs
-- UUID
-- Dotenv
-
-## 5. Installation
-### Clone This Repository:
-```
-  git clone https://github.com/DimTony/HNGtask5-Extension.git
-  cd HNGtask5-Extension
-```
-
-
-### Install Dependencies
-```
-  npm install
-```
-  This installs the packages in the package.json file.
-
-### Configure the API
-
-  Create a .env file in the root directory and specify your environment variables, including your Deepgram API Key and preferred port
-
-  - PORT= The port on which the API will run (default is 3000)
-  - DEEPGRAM_API_KEY= The API Key to your Deepgram instance.
-
-  **Sample:**
-  ```
-  PORT=3000
-  DEEPGRAM_API_KEY=YOUR_DEEPGRAM_API_KEY_HERE
-  ``` 
-
-
-        
-
-## 6. Usage
-
-### Running the API
-  To start the API, run the following command:
-
-  ```
-  npm start
-  ```
-  The API will start and be available at http://localhost:3000 (or the port you specified in the .env file)
-
-### API Interactions
-
-  Use an API client (e.g., Postman) to interact with the following endpoints
-
-  - Start Video: `POST /api/start`
-  - Upload, Concatenate & Transcribe Video: `POST /api/uploadFile`
-  - Stop Video: `POST /api/stop`
-  - Retrieve Video Information: `GET /api/getVideo/:id`
-### Limitations
-
-  - A good internet connection is required when running the API as it involves video manipulations.
-
-## 7. Contributing
-
-Contributions are welcomed! Feel free to open issues or submit pull requests or reach out through email via: [MyEmail](mailto:dhymyantt1@gmail.com).
