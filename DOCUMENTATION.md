@@ -6,9 +6,9 @@ Building a Simple REST API for Managing a 'person' resource with CRUD operations
   - [Table of Contents](#table-of-contents)
   - [1. API Usage](#1-api-usage)
     - [To CREATE a Person (POST /api)](#to-create-a-person-post-api)
-    - [To READ a Person's details (GET /api/:user_id)](#to-read-a-persons-details-get-apiuser_id)
-    - [To UPDATE a Person's details (PUT /api/:user_id)](#to-update-a-persons-details-put-apiuser_id)
-    - [To DELETE a Person (DELETE /api/:user_id)](#to-delete-a-person-delete-apiuser_id)
+    - [To READ a Person's details (GET /api/:user\_id)](#to-read-a-persons-details-get-apiuser_id)
+    - [To UPDATE a Person's details (PUT /api/:user\_id)](#to-update-a-persons-details-put-apiuser_id)
+    - [To DELETE a Person (DELETE /api/:user\_id)](#to-delete-a-person-delete-apiuser_id)
   - [2. Sample Usage](#2-sample-usage)
     - [To CREATE a Person](#to-create-a-person)
     - [To READ a Person's details](#to-read-a-persons-details)
@@ -20,6 +20,7 @@ Building a Simple REST API for Managing a 'person' resource with CRUD operations
     - [Create .env file and set db server:](#create-env-file-and-set-db-server)
     - [Run command below to start:](#run-command-below-to-start)
     - [Deployed](#deployed)
+
 
 ## 1. API Usage
 
